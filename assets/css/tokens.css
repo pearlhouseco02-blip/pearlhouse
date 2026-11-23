@@ -1,0 +1,49 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   Change colours, fonts and sizes here. Every other file uses these variables.
+   ========================================================================== */
+
+:root {
+  /* Fonts */
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-display: "Archivo", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Brand colours (same in both themes) */
+  --red: #e2452d;
+  --yellow: #f4d23c;
+  --green: #1f8a5b;
+  --pink: #f3a9c6;
+  --blue: #5b7fd6;
+  --label: #f4efe4;   /* cream paper of labels and price cards */
+  --ink: #161513;     /* outlines and shadows */
+
+  /* Retro hardware */
+  --wood: #6e4325;
+  --wood-dark: #4f2f19;
+  --plastic: #d9cfbc;
+  --plastic-dark: #b6ab95;
+
+  /* Layout */
+  --max-width: 1120px;
+  --radius: 6px;
+}
+
+/* Dark theme (default look) */
+:root,
+[data-theme="dark"] {
+  --bg: #1c1b19;
+  --panel: #24221f;
+  --text: #efe7d8;
+  --muted: #a39a8a;
+  --line: #3a3631;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg: #ede6d8;
+  --panel: #f6f1e7;
+  --text: #1d1b18;
+  --muted: #6c6457;
+  --line: #cfc4ae;
+}

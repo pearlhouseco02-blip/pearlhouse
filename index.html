@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO & sharing ===== -->
+  <title>Pearlhouse — Websites for Small Businesses</title>
+  <meta name="description" content="Websites and booking systems for small businesses. Free homepage design in 48 hours. Fixed prices, no hidden costs.">
+  <link rel="canonical" href="https://pearlhouse.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pearlhouse.io/">
+  <meta property="og:title" content="Pearlhouse — Websites for Small Businesses">
+  <meta property="og:description" content="Free homepage design in 48 hours. Fixed prices. You own everything.">
+  <meta name="theme-color" content="#1c1b19">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Set the theme before the page paints (prevents a light/dark flash) -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ===== Styles: tokens (colours/fonts) → base → sections ===== -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <!-- ===== Scripts: settings first, then features ===== -->
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="/"><i aria-hidden="true"></i>Pearlhouse</a>
+    <div class="nav-r">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light or dark mode">☀</button>
+      <a class="btn sm wa" href="https://wa.me/919403208764">Get free design</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1 class="disp">A website that brings you <em>customers</em>, not just visitors.</h1>
+      <p>Send us your business name. Within 48 hours you get a free homepage design. Like it? We build it. Don't? You owe nothing.</p>
+      <a class="btn wa" href="https://wa.me/919403208764">Get my free design →</a>
+      <div class="ticks"><span>4 live client sites</span><span>Fixed prices</span><span>You own everything</span></div>
+    </div>
+
+    <div class="board" aria-hidden="true">
+      <div class="spec">
+        <div class="row"><span>STANDARD EDITION</span><span>PH-001</span><span>STEREO</span></div>
+        <h3>Your new website <span>Design / Build</span></h3>
+        <p>A homepage designed around your business, delivered in 48 hours. Free to keep, free to say no to.</p>
+        <div class="barcode" id="barcode"></div>
+        <div class="barnum">4 800048 150248</div>
+      </div>
+      <div class="sticker sticker--free"><div>Free<br>Design<small>48 HOURS</small></div></div>
+      <div class="sticker sticker--price">Fixed price</div>
+      <div class="sticker sticker--own">You own it</div>
+      <div class="sticker sticker--call">no call needed</div>
+    </div>
+  </header>
+</div>
+
+<!-- ===================== WORK =====================
+     To add a project: copy one <article class="project"> block and edit it.
+     TV colour: add tv--wood or tv--black to the <a class="tv"> (beige is default).
+     Screen glow: change --glow on .screen.
+     Screenshot: put an image in assets/img/ and use
+       <div class="screen screen--shot" style="--shot:url(assets/img/your-image.jpg)">
+-->
+<section id="work">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">// NOW SHOWING</span><h2 class="disp">Recent work</h2></div>
+      <p>Real sites for real businesses. Click a screen to open the live site.</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project reveal">
+        <a class="tv" href="https://jskindia.in/" target="_blank" rel="noopener" aria-label="Open JSK Industries website">
+          <div class="screen" style="--glow:#2e4c5a"><small>CH 01 · jskindia.in</small><b>Powering the modern grid</b></div>
+          <div class="ctrl"><span>MANUFACTURING</span><div class="knobs"><i></i><i></i></div></div>
+        </a>
+        <div class="plank"></div>
+        <div class="plate">
+          <h3>JSK Industries</h3>
+          <p>Manufacturer site for global buyers, 6 languages</p>
+          <a href="https://jskindia.in/" target="_blank" rel="noopener">Visit site ↗</a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <a class="tv tv--black" href="https://www.abhiideas.com/" target="_blank" rel="noopener" aria-label="Open Abhi Ideas website">
+          <div class="screen" style="--glow:#5a2f2a"><small>CH 04 · abhiideas.com</small><b>Design, build &amp; interiors</b></div>
+          <div class="ctrl"><span>ARCHITECTURE</span><div class="knobs"><i></i><i></i></div></div>
+        </a>
+        <div class="plank"></div>
+        <div class="plate">
+          <h3>Abhi Ideas</h3>
+          <p>Architecture firm with meeting booking</p>
+          <a href="https://www.abhiideas.com/" target="_blank" rel="noopener">Visit site ↗</a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <a class="tv tv--wood" href="https://www.studiocucumber.com/" target="_blank" rel="noopener" aria-label="Open Studio Cucumber website">
+          <div class="screen" style="--glow:#3c5a33"><small>CH 02 · studiocucumber.com</small><b>If it can be written, it can be filmed</b></div>
+          <div class="ctrl"><span>MEDIA</span><div class="knobs"><i></i><i></i></div></div>
+        </a>
+        <div class="plank"></div>
+        <div class="plate">
+          <h3>Studio Cucumber</h3>
+          <p>Film studio portfolio with showreel</p>
+          <a href="https://www.studiocucumber.com/" target="_blank" rel="noopener">Visit site ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING =====================
+     Prices: data-usd is shown worldwide, data-inr in India (see config.js).
+     "from" prefix: add data-prefix="from". Featured plan: add plan--featured.
+-->
+<section id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">// PICK YOUR EDITION</span><h2 class="disp">Simple, fixed prices</h2></div>
+      <p>No hidden costs. If your project needs more, you'll know before we start, never after.</p>
+    </div>
+
+    <div class="plans">
+
+      <article class="plan reveal">
+        <div class="ed"><span>STANDARD EDITION</span><span>PH-101</span></div>
+        <h3>Launch</h3>
+        <div class="for">Get found and look credible</div>
+        <div class="price" data-usd="$450" data-inr="₹15,000">$450</div>
+        <ul>
+          <li>Up to 5 mobile-friendly pages</li>
+          <li>WhatsApp &amp; enquiry form</li>
+          <li>Google Maps listing setup</li>
+          <li>Ready in 1–2 weeks</li>
+        </ul>
+        <a class="btn ghost wa" data-plan="Launch" href="https://wa.me/919403208764">Start with Launch</a>
+      </article>
+
+      <article class="plan plan--featured reveal">
+        <div class="plan-badge">Most<br>value</div>
+        <div class="ed"><span>DELUXE EDITION</span><span>PH-201</span></div>
+        <h3>Grow</h3>
+        <div class="for">Take bookings or orders online</div>
+        <div class="price" data-usd="$750" data-inr="₹35,000">$750</div>
+        <ul>
+          <li>Everything in Launch</li>
+          <li>Booking or order system</li>
+          <li>Simple dashboard to manage it</li>
+          <li>Ready in 2–3 weeks</li>
+        </ul>
+        <a class="btn wa" data-plan="Grow" href="https://wa.me/919403208764">Start with Grow</a>
+      </article>
+
+      <article class="plan reveal">
+        <div class="ed"><span>COLLECTOR'S EDITION</span><span>PH-301</span></div>
+        <h3>Custom</h3>
+        <div class="for">Replace spreadsheets with a real system</div>
+        <div class="price" data-usd="$1,200" data-inr="₹60,000" data-prefix="from"><small>from </small>$1,200</div>
+        <ul>
+          <li>Customer portals &amp; dashboards</li>
+          <li>Payments &amp; integrations</li>
+          <li>Built around how you work</li>
+          <li>Timeline agreed upfront</li>
+        </ul>
+        <a class="btn ghost wa" data-plan="Custom" href="https://wa.me/919403208764">Discuss Custom</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag">// TRACKLIST</span><h2 class="disp">How it works</h2></div>
+      <p>Three steps. You never pay for something you haven't seen.</p>
+    </div>
+    <div class="tracks reveal">
+      <div class="track"><div class="n">01</div><div><h3>Free design</h3><p>Homepage design for your business in 48 hours. No payment, no call.</p></div><div class="len">48:00</div></div>
+      <div class="track"><div class="n">02</div><div><h3>Approve &amp; pay 50%</h3><p>Like it? Pay half and watch it being built on a live preview link.</p></div><div class="len">1–3 WK</div></div>
+      <div class="track"><div class="n">03</div><div><h3>Launch, then pay</h3><p>Pay the rest only when you're happy. Your domain, your code.</p></div><div class="len">LIVE</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head"><div><span class="tag">// LINER NOTES</span><h2 class="disp">Questions</h2></div></div>
+    <div class="faq">
+      <details><summary>What if I don't like the free design?</summary><p>You owe nothing. Tell us what to change, or simply walk away.</p></details>
+      <details><summary>Do I own the website?</summary><p>Yes. The domain, code and content are yours from day one.</p></details>
+      <details><summary>What happens after launch?</summary><p>30 days of free fixes. After that, small updates are quoted upfront, with no monthly contract required.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section id="contact" style="padding-top:24px">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="sticker sticker--cta-free" aria-hidden="true">Free · 48h</div>
+      <div class="sticker sticker--cta-risk" aria-hidden="true">No<br>risk</div>
+      <h2 class="disp">See your new website before you pay.</h2>
+      <p>Free homepage design in 48 hours.</p>
+      <div class="row">
+        <a class="btn wa" href="https://wa.me/919403208764">WhatsApp us</a>
+        <a class="btn dark" data-email data-subject="Free homepage design" href="mailto:hello@pearlhouse.io">Email us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<div class="wrap">
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Pearlhouse</span>
+    <span>Based in India · working worldwide</span>
+  </footer>
+</div>
+
+</body>
+</html>
